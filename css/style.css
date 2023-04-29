@@ -1,0 +1,116 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--Dark-Blue);
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+}
+.row {
+    align-content: center;
+    text-align: center;
+}
+.icon{
+    background-color: var(--Neon-Green);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 0.75rem;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.img{
+    background-color: var(--Grayish-Blue);
+    position: relative;
+}
+.img::after{
+    position: absolute;
+    content: ' ';
+    width: 45%;
+    height:1px;
+    right: 0;
+    top: 50%;
+    background-color: var(--Light-Cyan);
+}
+.img::before{
+    position: absolute;
+    content: ' ';
+    width: 45%;
+    height:1px;
+    left: 0;
+    top: 50%;
+    background-color: var(--Light-Cyan);
+
+
+}
+.icon:hover{
+    background-color: hsl(150, 86%, 26%) ;
+}
+.col-md-4{
+    background-color: var(--Grayish-Blue);
+    border-radius: 1rem;
+     -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+       -ms-border-radius: 1rem;
+       -o-border-radius: 1rem;
+       position: relative;
+       padding: 1.25rem 1.25rem 2rem;
+       
+}
+.container h1{ color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.825rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+     
+}
+.container p{
+    color: var(--Light-Cyan);
+    font-weight: 400;
+    letter-spacing: 0rem;
+}
+
+
+
+.attribution { font-size: 15px;
+     text-align: center;
+ margin-top: 4rem;
+ color: var(--Light-Cyan); 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    transition: color 0.5sec ;
+    -webkit-transition: color 0.5sec ;
+    -moz-transition: color 0.5sec ;
+    -ms-transition: color 0.5sec ;
+    -o-transition: color 0.5sec ;
+}
+.attribution a:hover{
+    color:hsl(228, 44%, 27%) ;
+}
